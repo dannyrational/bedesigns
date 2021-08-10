@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="media/bedesign-green-logo_mobile.png" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    referrerpolicy="no-referrer" />
+
+  <!-- Glide.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+    integrity="sha512-wYsVD8ho6rJOAo1Xf92gguhOGQ+aWgxuyKydjyEax4bnuEmHUt6VGwgpUqN8VlB4w50d0nt+ZL+3pgaFMAmdNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+    integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="public/style.css" />
+  <link rel="stylesheet" href="public/custom.css" />
+
+  <title>Home - BeDesigns</title>
+</head>
+
+<body class="font-lato">
+  <!-- Navbar -->
+  <div class="" id="navbar-wrap">
+    <div class="container grid grid-cols-2 sm:px-8 md:px-12 xl:px-16 2xl:px-20">
+      <!-- Logo -->
+      <div class="col-span-1 p-3">
+        <a href="index.html">
+          <img class="lg:hidden" src="media/bedesign-green-logo_mobile.png" alt="" />
+          <img class="hidden lg:block" src="media/bedesign-green-logo_desktop.png" alt="" />
+        </a>
+      </div>
+      <!-- Open Menu Button & Desktop Nav -->
+      <div class="flex items-center justify-end col-span-1 p-3">
+        <div class="hidden space-x-1 text-base font-semibold lg:inline-block text-trueGray-900">
+          <a class="inline-block p-2 text-emerald-400" href="">Home</a>
+          <a class="inline-block p-2" href="public/about.html">About</a>
+          <a class="inline-block p-2" href="public/services.html">Services</a>
+          <a class="inline-block p-2" href="public/portfolio.html">Portfolio</a>
+          <a class="inline-block p-2" href="public/contact.html">Contact</a>
+        </div>
+        <button class="inline-block p-2 space-y-1 transition-opacity duration-300 lg:hidden open-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide Menu -->
+  <div
+    class="fixed top-0 right-0 z-50 h-screen text-sm text-white transition-all duration-300 transform translate-x-full slide-menu backdrop-filter backdrop-blur-sm bg-trueGray-900 bg-opacity-90 w-72 lg:hidden">
+    <div class="grid grid-cols-1">
+      <!-- Close Menu Button  -->
+      <div class="flex items-center justify-end col-span-1 px-8 py-2">
+        <button class="p-2 text-4xl close-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <!-- Menu Links -->
+      <div class="px-8 py-2">
+        <div class="flex flex-col col-span-1 space-y-2 overflow-hidden font-semibold ">
+          <a class="pt-4 pb-2 transition-all duration-500 delay-100 translate-x-full border-b border-opacity-25 opacity-0 menu-link text-emerald-400"
+            href="">Home</a>
+          <a class="pt-4 pb-2 transition-all duration-500 delay-200 translate-x-full border-b border-opacity-25 opacity-0 menu-link"
+            href="public/about.html">About</a>
+          <a class="pt-4 pb-2 transition-all duration-500 delay-300 translate-x-full border-b border-opacity-25 opacity-0 menu-link"
+            href="public/services.html">Services</a>
+          <a class="pt-4 pb-2 transition-all duration-500 translate-x-full border-b border-opacity-25 opacity-0 delay-400 menu-link"
+            href="public/portfolio.html">Portfolio</a>
+          <a class="pt-4 pb-2 transition-all duration-500 delay-500 translate-x-full border-b border-opacity-25 opacity-0 menu-link"
+            href="public/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div
+    class="fixed top-0 z-40 hidden w-screen h-screen bg-opacity-25 cursor-pointer slide-menu-overlay bg-trueGray-900 lg:hidden">
+  </div>
+
+  <!-- Section One (Hero) -->
+  <div class="
+        section-one-wrap
+        relative
+        py-20
+        h-[500px]
+        lg:h-[700px]
+        flex
+        items-center
+        overflow-hidden
+      ">
+    <div class="container grid grid-cols-12 sm:px-8 md:px-12 xl:px-16 2xl:px-20">
+      <!-- Column One -->
+      <div class="z-10 flex flex-col justify-center col-span-12 p-3 sm:col-span-9 lg:col-span-7 xl:col-span-6">
+        <!-- Content -->
+        <h1 class="
+              mb-5
+              text-5xl
+              md:text-6xl
+              xl:text-7xl
+              font-bold font-montserrat
+              text-trueGray-900
+              max-w-[416px]
+              sm:max-w-none
+              2xl:max-w-[550px]
+            ">
+          Web solutions to
+          <span class="inline-block text-emerald-400">boost</span> your
+          business
+        </h1>
+        <div class="max-w-[359px] sm:max-w-none 2xl:max-w-[550px]">
+          <button
+            class="px-5 py-3 mb-3 mr-1 text-sm font-semibold text-white uppercase transition-all duration-300 border bg-trueGray-900 font-montserrat border-trueGray-900 hover:text-trueGray-900 hover:bg-white hover:shadow-md">
+            <a href="public/contact.html">Get a quote</a>
+          </button>
+          <button
+            class="px-5 py-3 text-sm font-semibold text-white uppercase transition-all duration-300 border bg-emerald-400 font-montserrat border-emerald-400 hover:text-emerald-400 hover:bg-white hover:shadow-md">
+            <a href="public/contact-spa.html">Hablamos Español</a>
+          </button>
+        </div>
+      </div>
+      <!-- Column Two -->
+      <div class="justify-center hidden p-3 lg:flex lg:col-span-5 xl:col-span-6">
+        <div class="z-10 flex flex-col justify-center h-48 p-8 text-lg font-bold w-80 bg-trueGray-900">
+          <p class="mb-6 text-white">
+            “Digital design is like painting, except the paint never dries.”
+          </p>
+          <p class="text-emerald-400">
+            <span class="inline-block mr-2 text-emerald-400">-</span>Neville
+            Brody
+          </p>
+        </div>
+        <img class="absolute -top-20 hidden max-w-[550px] lg:block" src="media/scribble-1.png" alt="" />
+        <!-- <img class="mx-auto" src="media/hero-img-2.jpg" alt=""> -->
+      </div>
+    </div>
+    <img class="
+          hidden
+          lg:block
+          absolute
+          bottom-0
+          right-0
+          2xl:right-24
+          lg:w-[820px]
+          xl:w-[920px]
+          2xl:w-[1020px]
+        " src="media/hero-img-3.png" alt="" />
+  </div>
+
+  <!-- Section Two (About & Services) -->
+  <div class="relative py-32 overflow-hidden section-two-wrap md:py-44 bg-emerald-50">
+    <!-- Mobile Top Section Divider -->
+    <div class="custom-shape-divider-top-1626278832 md:hidden">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <!-- Desktop Top Section Divider -->
+    <div class="hidden custom-shape-divider-top-1626279127 md:block">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <!-- Container -->
+    <div class="container sm:px-8 md:px-12 xl:px-16 2xl:px-20">
+      <!-- Grid One -->
+      <div class="grid grid-cols-12 mb-8">
+        <!-- Column One (Image) -->
+        <div class="col-span-12 p-3 mb-6 lg:col-span-6 lg:mb-0">
+          <img src="media/about-img-1.png" alt="" />
+        </div>
+        <!-- Column Two (Content) -->
+        <div class="col-span-12 p-3 mb-8 lg:col-span-6 lg:mb-0 lg:ml-4">
+          <h1 class="mb-4 text-3xl font-bold lg:text-4xl font-montserrat text-trueGray-900">
+            Who we are
+            <span class="inline-block w-8 h-1 mb-1 ml-2 bg-emerald-400"></span>
+          </h1>
+          <div class="mb-6 text-base leading-relaxed text-trueGray-500">
+            <p class="mb-3">
+              We are a premier digital web solutions agency that delivers
+              exceptional designs and development services. We cater to
+              startups and small businesses all across the globe.
+            </p>
+            <p>
+              We don’t just survive in this highly competitive industry, we
+              thrive, and excel at what we do. Leveraging cutting-edge
+              technologies and
+              <span class="inline-block italic font-semibold text-trueGray-900">deliver high quality work</span>
+              that is distinct from any other design and development agency.
+            </p>
+          </div>
+          <button
+            class="px-5 py-3 text-sm font-semibold text-white uppercase transition-all duration-200 border bg-emerald-400 font-montserrat border-emerald-400 hover:text-white hover:border-trueGray-900 hover:bg-trueGray-900 hover:shadow-md">
+            <a href="public/about.html">Learn More</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid Two -->
+      <div class="relative grid grid-cols-12">
+        <img class="absolute lg:w-[550px] hidden lg:block -top-0 -right-48" src="media/scribble-2.png" alt="" />
+        <div class="col-span-12 p-3 mb-8">
+          <h1 class="text-3xl font-bold lg:text-4xl font-montserrat text-trueGray-900">
+            What we offer
+            <span class="inline-block w-8 h-1 mb-1 ml-2 bg-emerald-400"></span>
+          </h1>
+        </div>
+        <!-- Services -->
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">01</span>
+            <h3 class="mb-2 font-bold">Landing Pages</h3>
+            <i class="w-4 far fa-file"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">02</span>
+            <h3 class="mb-2 font-bold">Personal Websites</h3>
+            <i class="w-4 far fa-window-restore"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">03</span>
+            <h3 class="mb-2 font-bold">Business Websites</h3>
+            <i class="w-4 fas fa-briefcase"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">04</span>
+            <h3 class="mb-2 font-bold">Ecommerce Websites</h3>
+            <i class="w-4 fas fa-store"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">05</span>
+            <h3 class="mb-2 font-bold">Shopify Websites</h3>
+            <i class="w-4 fab fa-shopify"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">06</span>
+            <h3 class="mb-2 font-bold">Wordpress Websites</h3>
+            <i class="w-4 fab fa-wordpress"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <div
+            class="px-8 py-4 transition-colors duration-200 bg-white text-trueGray-900 hover:bg-emerald-400 hover:text-white group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">07</span>
+            <h3 class="mb-2 font-bold">Logo Design</h3>
+            <i class="w-4 fas fa-draw-polygon"></i>
+          </div>
+        </div>
+        <div class="z-10 col-span-12 p-3 sm:col-span-6 lg:col-span-4">
+          <a href="public/services.html"
+            class="inline-block w-full px-8 py-4 text-white transition-colors duration-200 cursor-pointer bg-trueGray-900 hover:bg-emerald-400 group">
+            <span
+              class="inline-block text-sm font-semibold transition-colors duration-200 text-trueGray-400 group-hover:text-white">View
+              All</span>
+            <h3 class="mb-2 font-bold">Our Services</h3>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Bottom Section Divider -->
+    <div class="custom-shape-divider-bottom-1626278991 md:hidden">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <!-- Desktop Bottom Section Divider -->
+    <div class="hidden custom-shape-divider-bottom-1626279214 md:block">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Section Three (Our Founder) -->
+  <div class="relative py-20 overflow-hidden section-three-wrap">
+    <div class="container sm:px-8 md:px-12 xl:px-16 2xl:px-20">
+      <!-- Title -->
+      <div class="grid grid-cols-12 mb-4">
+        <div class="col-span-12 p-3 xl:col-span-10">
+          <h1 class="text-3xl font-bold lg:text-4xl font-montserrat text-trueGray-900">
+            Meet our founder
+            <span class="inline-block w-8 h-1 mb-1 ml-2 bg-emerald-400"></span>
+          </h1>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="relative grid grid-cols-12 lg:gap-6">
+        <!-- <img class="
+              absolute
+              lg:w-[550px]
+              hidden
+              lg:block
+              top-0
+              -left-80
+              transform
+              rotate-45
+            " src="media/scribble-2.png" alt="" /> -->
+        <div class="relative z-10 justify-center col-span-12 p-3 mb-4 xl:py-14 lg:flex lg:mb-0 lg:col-span-6">
+          <div class="relative p-1  lg:max-w-[519px]">
+            <img class="" src="media/team-img-1.png" alt="" />
+            <div class="absolute p-2 bottom-20 left-12 w-44 bg-trueGray-900">
+              <h2 class="text-lg font-bold leading-none text-white uppercase font-montserrat">
+                Danny Rodas
+              </h2>
+              <h3 class="text-base leading-none text-trueGray-400">
+                Founder
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="relative z-10 flex-col justify-center col-span-12 p-3 lg:col-span-6 lg:flex">
+          <!-- Big Text -->
+          <div class="
+                z-0
+                absolute
+                hidden
+                font-black
+                xl:block
+                text-trueGray-100 text-opacity-75
+                lg:text-[150px]
+                xl:text-[180px]
+                2xl:text-[220px]
+                font-montserrat
+                leading-none
+                xl:top-52
+                2xl:top-44
+                xl:-left-8
+              ">
+            <h1 class="">I'm</h1>
+            <h1 class="">Danny</h1>
+          </div>
+          <p class="z-10 mb-2 leading-relaxed text-trueGray-500">
+            Hey I'm Danny Rodas, an entrepreneur who loves web design &
+            development.
+          </p>
+          <p class="z-10 mb-2 leading-relaxed text-trueGray-500">
+            <span class="inline-block italic font-semibold text-trueGray-900">I have years of experience</span>
+            working with international clients and a passion for great
+            results. When I founded this agency, I wanted to create something
+            that stood out from the rest, not the usual agency that sells you
+            a package. My goal is to make sure
+            <span class="inline-block italic font-semibold text-trueGray-900">my clients are happy</span>
+            with the results we provide.
+          </p>
+          <p class="z-10 mb-2 leading-relaxed text-trueGray-500">
+            When I'm not working, I love to spend time with my family and
+            travel around the world. I enjoy exercising to keep me full of
+            energy. I also enjoy sci-fi movies & documentaries.
+          </p>
+          <p class="z-10 mb-10 leading-relaxed text-trueGray-500">
+            Anyway, enough of me... I hope we're able to work with you in the
+            future.
+          </p>
+          <!-- <div class="flex flex-col justify-center p-8 text-lg font-bold bg-trueGray-900 xl:max-w-[427px]">
+                        <p class="mb-2 text-white">Interested in working with us?</p>
+                        <p class="mb-4 text-sm text-trueGray-400">Feel free to
+                            contact
+                            us.</p>
+                        <a class="text-emerald-400" href="mailto:jobs@bedesigns.net">jobs@bedesigns.net</a>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section Four (Footer) -->
+  <div class="section-four bg-trueGray-900">
+    <div class="container py-4">
+      <div class="grid grid-cols-12 text-white">
+        <div
+          class="flex flex-col items-center justify-center col-span-12 p-3 space-y-2 text-sm sm:space-y-0 sm:flex-row lg:text-base sm:space-x-4 lg:space-x-6">
+          <a class="inline-block p-2 font-semibold text-emerald-400" href="index.html">Home</a>
+          <a class="inline-block p-2" href="public/about.html">About</a>
+          <a class="inline-block p-2" href="public/services.html">Services</a>
+          <a class="inline-block p-2" href="public/portfolio.html">Portfolio</a>
+          <a class="inline-block p-2" href="public/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4 border-t border-trueGray-600">
+      <div class="grid grid-cols-12">
+        <div class="flex justify-center col-span-12 p-3 text-sm text-trueGray-600">
+          <p>
+            © <span class="inline-block" id="auto-year"></span> BeDesigns -
+            All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-span-12 p-3">
+          <div class="flex justify-center space-x-1 text-sm text-trueGray-400">
+            <a class="transition-colors duration-200 hover:text-emerald-400" href="">Privacy Policy</a>
+            <div>|</div>
+            <a class="transition-colors duration-200 hover:text-emerald-400" href="">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="public/script.js"></script>
+</body>
+
+</html>
