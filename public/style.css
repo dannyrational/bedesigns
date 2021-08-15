@@ -1708,10 +1708,6 @@ select{
     width: 550px;
   }
 
-  .lg\:w-\[440px\]{
-    width: 440px;
-  }
-
   .lg\:w-3\/4{
     width: 75%;
   }
