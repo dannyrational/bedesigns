@@ -1728,6 +1728,10 @@ select{
     max-width: 678px;
   }
 
+  .lg\:max-w-\[440px\]{
+    max-width: 440px;
+  }
+
   .lg\:place-items-center{
     place-items: center;
   }
