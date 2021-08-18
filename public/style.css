@@ -819,6 +819,10 @@ select{
   }
 }
 
+.static{
+  position: static;
+}
+
 .fixed{
   position: fixed;
 }
@@ -970,6 +974,14 @@ select{
 
 .mr-4{
   margin-right: 1rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.block{
+  display: block;
 }
 
 .inline-block{
@@ -1360,6 +1372,11 @@ select{
   line-height: 1.75rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -1426,6 +1443,11 @@ select{
 .text-trueGray-800{
   --tw-text-opacity: 1;
   color: rgba(38, 38, 38, var(--tw-text-opacity));
+}
+
+.text-emerald-500{
+  --tw-text-opacity: 1;
+  color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 
 .text-opacity-75{
@@ -1726,6 +1748,10 @@ select{
 
   .lg\:max-w-\[440px\]{
     max-width: 440px;
+  }
+
+  .lg\:max-w-\[90\%\]{
+    max-width: 90%;
   }
 
   .lg\:place-items-center{
