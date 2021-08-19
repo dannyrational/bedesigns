@@ -55,15 +55,15 @@ const cookies = document.querySelector('#cookies');
 const cookiesBtn = document.querySelector('#cookies-btn');
 
 //Get cookies
-// const getCookies = Cookies.get('accepted-cookies')
+const getCookies = Cookies.get('accepted-cookies')
 
 //Check if the cookie is stored
-// if (!getCookies) {
-//   //Show cookies pop up after 5 secs
-//   setTimeout(() => {
-//     cookies.classList.remove('translate-y-full')
-//   }, 3000);
-// }
+if (!getCookies) {
+  //Show cookies pop up after 5 secs
+  setTimeout(() => {
+    cookies.classList.remove('translate-y-full')
+  }, 3000);
+}
 
 //Hide cookies pop up
 function hideCookies() {
@@ -71,9 +71,9 @@ function hideCookies() {
 }
 
 //Accept cookies when clicked
-// cookiesBtn.addEventListener('click', function () {
-//   //Set Cookies
-//   Cookies.set('accepted-cookies', true, {
-//     expires: 30
-//   })
-// })
+cookiesBtn.addEventListener('click', function () {
+  //Set Cookies
+  Cookies.set('accepted-cookies', true, {
+    expires: 30
+  })
+})
