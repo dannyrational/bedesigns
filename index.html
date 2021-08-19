@@ -44,6 +44,28 @@
 </head>
 
 <body class="font-lato">
+  <!-- Cookies -->
+  <div
+    class="fixed bottom-0 z-30 w-56 p-3 text-sm font-medium text-white transition-all duration-300 translate-y-full left-2 bg-trueGray-900"
+    id="cookies">
+    <p class="mb-2">We use <a class="inline-block font-medium text-emerald-400" href="public/privacy.html">cookies</a>
+      🍪 to help our
+      website
+      run
+      effectively.
+      <span class="inline-block mt-2">
+        By
+        using
+        this website,
+        you agree to our use
+        of cookies.
+      </span>
+    </p>
+    <button type="button" class="w-full p-2 font-bold uppercase bg-emerald-400" id="cookies-btn"
+      onclick="hideCookies()">I
+      accept</button>
+  </div>
+
   <!-- Navbar -->
   <div class="" id="navbar-wrap">
     <div class="container grid grid-cols-2 sm:px-8 md:px-12 xl:px-16 2xl:px-20">
@@ -459,28 +481,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Cookies -->
-  <div
-    class="fixed bottom-0 z-30 w-56 p-3 text-sm font-medium text-white transition-all duration-300 translate-y-full left-2 bg-trueGray-900"
-    id="cookies">
-    <p class="mb-2">We use <a class="inline-block font-medium text-emerald-400" href="public/privacy.html">cookies</a>
-      🍪 to help our
-      website
-      run
-      effectively.
-      <span class="inline-block mt-2">
-        By
-        using
-        this website,
-        you agree to our use
-        of cookies.
-      </span>
-    </p>
-    <button type="button" class="w-full p-2 font-bold uppercase bg-emerald-400" id="cookies-btn"
-      onclick="hideCookies()">I
-      accept</button>
   </div>
 
   <!-- Cookie JS -->
