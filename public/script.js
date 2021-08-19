@@ -54,6 +54,17 @@ autoYear.innerText = year;
 const cookies = document.querySelector('#cookies');
 const cookiesBtn = document.querySelector('#cookies-btn');
 
+//Get cookies
+const getCookies = Cookies.get('accepted-cookies')
+
+//Check if the cookie is stored
+if (!getCookies) {
+  //Show cookies pop up after 5 secs
+  setTimeout(() => {
+    cookies.classList.remove('translate-y-full')
+  }, 3000);
+}
+
 //Hide cookies pop up
 function hideCookies() {
   cookies.classList.add('translate-y-full')
@@ -66,14 +77,3 @@ cookiesBtn.addEventListener('click', function () {
     expires: 30
   })
 })
-
-//Get cookies
-const getCookies = Cookies.get('accepted-cookies')
-
-if (!getCookies) {
-
-  //Show cookies pop up after 5 secs
-  setTimeout(() => {
-    cookies.classList.remove('translate-y-full')
-  }, 3000);
-}
