@@ -5,6 +5,7 @@ const slideMenu = document.querySelector(".slide-menu");
 const slideMenuOverlay = document.querySelector(".slide-menu-overlay");
 const menuLink = document.querySelectorAll(".menu-link");
 
+
 // ********** Mobile Menu **********
 openMenuBtn.addEventListener("click", function () {
   slideMenu.classList.remove("translate-x-full");
@@ -47,3 +48,32 @@ let year = date.getFullYear();
 let autoYear = document.getElementById("auto-year");
 
 autoYear.innerText = year;
+
+
+// ********** Cookies **********
+const cookies = document.querySelector('#cookies');
+const cookiesBtn = document.querySelector('#cookies-btn');
+
+//Hide cookies pop up
+function hideCookies() {
+  cookies.classList.add('translate-y-full')
+}
+
+//Accept cookies when clicked
+cookiesBtn.addEventListener('click', function () {
+  //Set Cookies
+  Cookies.set('accepted-cookies', true, {
+    expires: 30
+  })
+})
+
+//Get cookies
+const getCookies = Cookies.get('accepted-cookies')
+
+if (!getCookies) {
+
+  //Show cookies pop up after 5 secs
+  setTimeout(() => {
+    cookies.classList.remove('translate-y-full')
+  }, 3000);
+}

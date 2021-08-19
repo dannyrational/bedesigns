@@ -8,19 +8,6 @@
   <meta name=”robots” content="index, follow">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW7GJH7M43"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-CW7GJH7M43');
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204664344-1">
   </script>
   <script>
@@ -231,7 +218,32 @@
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Cookies -->
+  <div
+    class="fixed bottom-0 z-30 w-56 p-3 text-sm font-medium text-white transition-all duration-300 translate-y-full left-2 bg-trueGray-900"
+    id="cookies">
+    <p class="mb-2">We use <a class="inline-block font-medium text-emerald-400" href="public/privacy.html">cookies</a>
+      🍪 to help our
+      website
+      run
+      effectively.
+      <span class="inline-block mt-2">
+        By
+        using
+        this website,
+        you agree to our use
+        of cookies.
+      </span>
+    </p>
+    <button type="button" class="w-full p-2 font-bold uppercase bg-emerald-400" id="cookies-btn"
+      onclick="hideCookies()">I
+      accept</button>
+  </div>
+
+  <!-- Cookie JS -->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+
+  <!-- Main Scripts -->
   <script src="../public/script.js"></script>
 
   <!--Start of Tawk.to Script-->
