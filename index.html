@@ -30,6 +30,10 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="media/bedesign-green-logo_mobile.png" />
 
+  <!-- AOS -->
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
   <!-- Font Awesome -->
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
@@ -137,25 +141,26 @@
               max-w-[416px]
               sm:max-w-none
               2xl:max-w-[550px]
-            ">
+            " data-aos="fade-right" data-aos-duration="1500">
           Web solutions to
           <span class="inline-block text-emerald-400">boost</span> your
           business
         </h1>
-        <div class="max-w-[359px] sm:max-w-none 2xl:max-w-[550px]">
+        <div class="max-w-[359px] sm:max-w-none 2xl:max-w-[550px]" data-aos="fade-right" data-aos-duration="1500">
           <a href="public/contact.html"
-            class="px-5 py-3 mb-3 mr-1 text-sm font-semibold text-white uppercase transition-all duration-300 border bg-trueGray-900 font-montserrat border-trueGray-900 hover:text-trueGray-900 hover:bg-white hover:shadow-md">
+            class="inline-block px-5 py-3 mb-3 mr-1 text-sm font-semibold text-white uppercase transition-all duration-300 border bg-trueGray-900 font-montserrat border-trueGray-900 hover:text-trueGray-900 hover:bg-white hover:shadow-md">
             Get a quote
           </a>
           <a href="public/contact-spa.html"
-            class="px-5 py-3 text-sm font-semibold text-white uppercase transition-all duration-300 border bg-emerald-400 font-montserrat border-emerald-400 hover:text-emerald-400 hover:bg-white hover:shadow-md">
+            class="inline-block px-5 py-3 text-sm font-semibold text-white uppercase transition-all duration-300 border bg-emerald-400 font-montserrat border-emerald-400 hover:text-emerald-400 hover:bg-white hover:shadow-md">
             Hablamos Español
           </a>
         </div>
       </div>
       <!-- Column Two -->
       <div class="justify-center hidden p-3 lg:flex lg:col-span-5 xl:col-span-6">
-        <div class="z-10 flex flex-col justify-center h-48 p-8 text-lg font-bold w-80 bg-trueGray-900">
+        <div class="z-10 flex flex-col justify-center h-48 p-8 text-lg font-bold w-80 bg-trueGray-900"
+          data-aos="fade-left" data-aos-duration="1500">
           <p class="mb-6 text-white">
             “Digital design is like painting, except the paint never dries.”
           </p>
@@ -164,7 +169,8 @@
             Brody
           </p>
         </div>
-        <img class="absolute -top-20 hidden max-w-[550px] lg:block" src="media/scribble-1.png" alt="" />
+        <img class="absolute -top-20 hidden max-w-[550px] lg:block" src="media/scribble-1.png" alt="" data-aos="zoom-in"
+          data-aos-duration="1500" data-aos-delay="700" />
         <!-- <img class="mx-auto" src="media/hero-img-2.jpg" alt=""> -->
       </div>
     </div>
@@ -178,8 +184,10 @@
           lg:w-[820px]
           xl:w-[920px]
           2xl:w-[1020px]
-        " src="media/hero-img-3.png" alt="" />
+        " src="media/hero-img-3.png" alt="" data-aos-duration="1500" data-aos-delay="400" data-aos="fade-left" />
   </div>
+
+  <!-- TODO: Last AOS -->
 
   <!-- Section Two (About & Services) -->
   <div class="relative py-32 overflow-hidden section-two-wrap md:py-44 bg-emerald-50">
@@ -488,6 +496,12 @@
 
   <!-- Cookie JS -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <!-- Main Scripts -->
   <script src="public/script.js"></script>

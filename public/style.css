@@ -1113,11 +1113,6 @@ select{
   transform: var(--tw-transform);
 }
 
-.translate-y-full{
-  --tw-translate-y: 100%;
-  transform: var(--tw-transform);
-}
-
 .rotate-45{
   --tw-rotate: 45deg;
   transform: var(--tw-transform);
@@ -1750,8 +1745,16 @@ select{
     width: 75%;
   }
 
+  .lg\:w-\[648px\]{
+    width: 648px;
+  }
+
   .lg\:w-\[675px\]{
     width: 675px;
+  }
+
+  .lg\:w-\[904px\]{
+    width: 904px;
   }
 
   .lg\:max-w-\[519px\]{
