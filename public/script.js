@@ -61,13 +61,13 @@ const getCookies = Cookies.get('accepted-cookies')
 if (!getCookies) {
   //Show cookies pop up after 5 secs
   setTimeout(() => {
-    cookies.classList.remove('translate-y-full')
+    cookies.classList.remove('hidden')
   }, 3000);
 }
 
 //Hide cookies pop up
 function hideCookies() {
-  cookies.classList.add('translate-y-full')
+  cookies.classList.add('hidden')
 }
 
 //Accept cookies when clicked
