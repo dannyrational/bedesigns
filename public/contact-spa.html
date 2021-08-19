@@ -21,14 +21,17 @@
         gtag('config', 'UA-204664344-1');
     </script>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../media/bedesign-green-logo_mobile.png" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        referrerpolicy="no-referrer" />
-    <!-- Main CSS -->
+    <!-- Main Styles -->
     <link rel="stylesheet" href="../public/style.css" />
     <link rel="stylesheet" href="../public/custom.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../media/bedesign-green-logo_mobile.png" />
+
+    <!-- Font Awesome -->
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
 
     <title>Contact | Logo & Web Design Agency | BeDesigns</title>
 </head>
@@ -255,7 +258,7 @@
     <script src="../public/script.js"></script>
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    <script defer type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function () {
