@@ -980,12 +980,12 @@ select{
   margin-bottom: 3rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
-}
-
 .mr-4{
   margin-right: 1rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .block{
@@ -1102,10 +1102,6 @@ select{
 
 .max-w-\[550px\]{
   max-width: 550px;
-}
-
-.max-w-\[1000px\]{
-  max-width: 1000px;
 }
 
 .translate-x-full{
@@ -1260,6 +1256,11 @@ select{
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-trueGray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+}
+
 .bg-opacity-90{
   --tw-bg-opacity: 0.9;
 }
@@ -1324,6 +1325,16 @@ select{
   padding-bottom: 4rem;
 }
 
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -1379,14 +1390,14 @@ select{
   line-height: 2rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold{
@@ -1605,6 +1616,14 @@ select{
     grid-column: span 6 / span 6;
   }
 
+  .sm\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .sm\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -1648,6 +1667,11 @@ select{
 
   .sm\:pl-4{
     padding-left: 1rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1713,6 +1737,10 @@ select{
     margin-right: 2rem;
   }
 
+  .lg\:mr-1{
+    margin-right: 0.25rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1745,16 +1773,16 @@ select{
     width: 75%;
   }
 
-  .lg\:w-\[648px\]{
-    width: 648px;
+  .lg\:w-\[50\%\]{
+    width: 50%;
   }
 
   .lg\:w-\[675px\]{
     width: 675px;
   }
 
-  .lg\:w-\[904px\]{
-    width: 904px;
+  .lg\:w-\[648px\]{
+    width: 648px;
   }
 
   .lg\:max-w-\[519px\]{
@@ -1819,6 +1847,11 @@ select{
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1894,6 +1927,10 @@ select{
 
   .\32xl\:w-auto{
     width: auto;
+  }
+
+  .\32xl\:w-\[33\.33\%\]{
+    width: 33.33%;
   }
 
   .\32xl\:max-w-\[550px\]{
