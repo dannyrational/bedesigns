@@ -859,10 +859,6 @@ select{
   right: -12rem;
 }
 
-.-left-80{
-  left: -20rem;
-}
-
 .bottom-20{
   bottom: 5rem;
 }
@@ -980,12 +976,20 @@ select{
   margin-bottom: 3rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .mr-4{
   margin-right: 1rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.ml-1{
+  margin-left: 0.25rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
 }
 
 .block{
@@ -1109,11 +1113,6 @@ select{
   transform: var(--tw-transform);
 }
 
-.rotate-45{
-  --tw-rotate: 45deg;
-  transform: var(--tw-transform);
-}
-
 .-rotate-12{
   --tw-rotate: -12deg;
   transform: var(--tw-transform);
@@ -1186,6 +1185,12 @@ select{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -1335,12 +1340,21 @@ select{
   padding-bottom: 0.25rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .text-center{
@@ -1390,14 +1404,14 @@ select{
   line-height: 2rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -1533,6 +1547,10 @@ select{
 
 .delay-500{
   transition-delay: 500ms;
+}
+
+.delay-700{
+  transition-delay: 700ms;
 }
 
 .duration-300{
@@ -1773,16 +1791,16 @@ select{
     width: 75%;
   }
 
-  .lg\:w-\[50\%\]{
-    width: 50%;
+  .lg\:w-\[648px\]{
+    width: 648px;
   }
 
   .lg\:w-\[675px\]{
     width: 675px;
   }
 
-  .lg\:w-\[648px\]{
-    width: 648px;
+  .lg\:w-\[50\%\]{
+    width: 50%;
   }
 
   .lg\:max-w-\[519px\]{
