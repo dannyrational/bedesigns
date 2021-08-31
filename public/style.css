@@ -859,16 +859,16 @@ select{
   right: -12rem;
 }
 
+.left-2{
+  left: 0.5rem;
+}
+
 .bottom-20{
   bottom: 5rem;
 }
 
 .left-12{
   left: 3rem;
-}
-
-.left-2{
-  left: 0.5rem;
 }
 
 .-top-10{
@@ -903,12 +903,12 @@ select{
   z-index: 10;
 }
 
-.z-0{
-  z-index: 0;
-}
-
 .z-30{
   z-index: 30;
+}
+
+.z-0{
+  z-index: 0;
 }
 
 .col-span-1{
@@ -922,6 +922,10 @@ select{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.ml-4{
+  margin-left: 1rem;
 }
 
 .mb-5{
@@ -964,10 +968,6 @@ select{
   margin-bottom: 0.5rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -982,14 +982,6 @@ select{
 
 .mr-4{
   margin-right: 1rem;
-}
-
-.ml-1{
-  margin-left: 0.25rem;
-}
-
-.ml-4{
-  margin-left: 1rem;
 }
 
 .block{
@@ -1018,10 +1010,6 @@ select{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[500px\]{
-  height: 500px;
 }
 
 .h-48{
@@ -1072,12 +1060,12 @@ select{
   width: 100%;
 }
 
-.w-44{
-  width: 11rem;
-}
-
 .w-56{
   width: 14rem;
+}
+
+.w-44{
+  width: 11rem;
 }
 
 .w-\[552px\]{
@@ -1181,16 +1169,16 @@ select{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -1300,9 +1288,9 @@ select{
   padding-bottom: 0.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .px-5{
@@ -1315,11 +1303,6 @@ select{
   padding-bottom: 0.75rem;
 }
 
-.py-32{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1328,6 +1311,11 @@ select{
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .py-1\.5{
@@ -1340,9 +1328,9 @@ select{
   padding-bottom: 0.25rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pt-4{
@@ -1351,10 +1339,6 @@ select{
 
 .pb-2{
   padding-bottom: 0.5rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .text-center{
@@ -1374,6 +1358,11 @@ select{
   line-height: 1.5rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1382,6 +1371,11 @@ select{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-5xl{
@@ -1399,19 +1393,9 @@ select{
   line-height: 2.25rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -1422,12 +1406,12 @@ select{
   font-weight: 700;
 }
 
-.font-black{
-  font-weight: 900;
-}
-
 .font-medium{
   font-weight: 500;
+}
+
+.font-black{
+  font-weight: 900;
 }
 
 .uppercase{
@@ -1471,14 +1455,14 @@ select{
   color: rgba(163, 163, 163, var(--tw-text-opacity));
 }
 
-.text-trueGray-100{
-  --tw-text-opacity: 1;
-  color: rgba(245, 245, 245, var(--tw-text-opacity));
-}
-
 .text-trueGray-600{
   --tw-text-opacity: 1;
   color: rgba(82, 82, 82, var(--tw-text-opacity));
+}
+
+.text-trueGray-100{
+  --tw-text-opacity: 1;
+  color: rgba(245, 245, 245, var(--tw-text-opacity));
 }
 
 .text-trueGray-800{
@@ -1549,8 +1533,8 @@ select{
   transition-delay: 500ms;
 }
 
-.delay-700{
-  transition-delay: 700ms;
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .duration-300{
@@ -1559,10 +1543,6 @@ select{
 
 .duration-500{
   transition-duration: 500ms;
-}
-
-.duration-200{
-  transition-duration: 200ms;
 }
 
 .hover\:border-trueGray-900:hover{
@@ -1585,14 +1565,14 @@ select{
   background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
 }
 
-.hover\:text-trueGray-900:hover{
-  --tw-text-opacity: 1;
-  color: rgba(23, 23, 23, var(--tw-text-opacity));
-}
-
 .hover\:text-emerald-400:hover{
   --tw-text-opacity: 1;
   color: rgba(52, 211, 153, var(--tw-text-opacity));
+}
+
+.hover\:text-trueGray-900:hover{
+  --tw-text-opacity: 1;
+  color: rgba(23, 23, 23, var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -1710,6 +1690,11 @@ select{
   .md\:py-44{
     padding-top: 11rem;
     padding-bottom: 11rem;
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:text-6xl{
@@ -1849,6 +1834,16 @@ select{
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .lg\:text-center{
     text-align: center;
   }
@@ -1858,13 +1853,13 @@ select{
     line-height: 2.5rem;
   }
 
-  .lg\:text-\[150px\]{
-    font-size: 150px;
-  }
-
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-\[150px\]{
+    font-size: 150px;
   }
 
   .lg\:text-sm{
@@ -1900,10 +1895,6 @@ select{
 
   .xl\:w-3\/5{
     width: 60%;
-  }
-
-  .xl\:max-w-\[427px\]{
-    max-width: 427px;
   }
 
   .xl\:gap-0{
