@@ -19,12 +19,15 @@ function activeBtnChange() {
 
         btn.addEventListener('click', () => {
             filterBtns.forEach(element => {
-                element.classList.remove('bg-trueGray-900');
-                element.classList.add('bg-emerald-400');
+                element.classList.remove('bg-emerald-400');
+                element.classList.remove('text-white');
+                element.classList.add('text-trueGray-900');
             });
 
             btn.classList.remove('bg-emerald-400');
-            btn.classList.add('bg-trueGray-900');
+            btn.classList.add('bg-emerald-400');
+            btn.classList.remove('text-trueGray-900');
+            btn.classList.add('text-white')
         })
     }
 }
