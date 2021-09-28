@@ -1,48 +1,48 @@
 // ********** Counter **********
-let counterContainer = document.querySelector(".counter-container");
-const counter = document.querySelectorAll(".counter");
-const divider = 300;
+// let counterContainer = document.querySelector(".counter-container");
+// const counter = document.querySelectorAll(".counter");
+// const divider = 300;
 
-const callback = function (entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      counter.forEach((element) => {
-        function updateCount() {
-          const target = +element.getAttribute("data-target");
-          const count = +element.innerText;
-          const increment = target / divider;
+// const callback = function (entries) {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       counter.forEach((element) => {
+//         function updateCount() {
+//           const target = +element.getAttribute("data-target");
+//           const count = +element.innerText;
+//           const increment = target / divider;
 
-          if (count < target) {
-            element.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 7);
-          } else {
-            element.innerText = target;
-          }
-        }
-        updateCount();
-      });
-    } else {
-      return;
-    }
-  });
-};
+//           if (count < target) {
+//             element.innerText = Math.ceil(count + increment);
+//             setTimeout(updateCount, 7);
+//           } else {
+//             element.innerText = target;
+//           }
+//         }
+//         updateCount();
+//       });
+//     } else {
+//       return;
+//     }
+//   });
+// };
 
-const observer = new IntersectionObserver(callback, {
-  threshold: 0.2,
-});
+// const observer = new IntersectionObserver(callback, {
+//   threshold: 0.2,
+// });
 
-observer.observe(counterContainer);
+// observer.observe(counterContainer);
 
 // ********** Glide JS Init (Testimonials) **********
-const auto = {
-  type: "carousel",
-  autoplay: 10000,
-  perView: 1,
-  gap: 0,
-  animationDuration: 800,
-  animationTimingFunc: "linear",
-};
-new Glide(".glide", auto).mount();
+// const auto = {
+//   type: "carousel",
+//   autoplay: 10000,
+//   perView: 1,
+//   gap: 0,
+//   animationDuration: 800,
+//   animationTimingFunc: "linear",
+// };
+// new Glide(".glide", auto).mount();
 
 // ********** Accordion **********
 const accordionTab = document.querySelectorAll(".accordion-tab");
